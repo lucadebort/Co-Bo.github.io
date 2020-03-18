@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-03-17 16:29:37 +0100
+title: Modifica da Forestry.io
+date: 2020-03-17T15:29:37.000+00:00
 categories: jekyll update
+
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
