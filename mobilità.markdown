@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Mobilità e viabilità
-permalink: /mobilità/
+permalink: /mobilita/
 ---
 
 <ul>
 
-{% for argomento in site.mobilità %}
+{% for argomento in site.mobilita %}
 
   <li>
     <a href="{{argomento.url}}">{{argomento.title}}</a>

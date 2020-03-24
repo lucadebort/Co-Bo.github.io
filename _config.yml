@@ -52,7 +52,7 @@ collections:
       output: true
   lavoro:
       output: true
-  mobilità:
+  mobilita:
       output: true
   salute:
       output: true

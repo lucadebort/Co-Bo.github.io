@@ -5,7 +5,8 @@ permalink: /casa/
 ---
 
 <ul>
-
+  <li>  <a href="/">🏠Home</a></li>
+  <li> {{page.title}} </li>
 {% for argomento in site.casa %}
 
   <li>
