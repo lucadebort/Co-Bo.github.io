@@ -13,12 +13,14 @@ header .wrapper {
 
 ul {
   list-style: none;
-  width: 200px;
+  width: 240px;
 
   li {
     width: 100%;
     text-align: center;
     border: 1px solid #aaa;
+    padding: 5px;
+    margin: 2px 0;
   }
 
 }

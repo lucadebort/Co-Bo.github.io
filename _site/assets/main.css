@@ -284,8 +284,8 @@ table td { border: 1px solid #e8e8e8; }
 
 header .wrapper { display: flex; align-items: flex-end; }
 
-ul { list-style: none; width: 200px; }
+ul { list-style: none; width: 240px; }
 
-ul li { width: 100%; text-align: center; border: 1px solid #aaa; }
+ul li { width: 100%; text-align: center; border: 1px solid #aaa; padding: 5px; margin: 2px 0; }
 
 /*# sourceMappingURL=main.css.map */

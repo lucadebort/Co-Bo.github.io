@@ -4,6 +4,7 @@ title: Casa
 permalink: /casa/
 ---
 
+<p>Ti trovi in: <b>{{page.title}}</b></p>
 <ul>
   <li>  <a href="/">🏠Home</a></li>
   <li> {{page.title}} </li>
