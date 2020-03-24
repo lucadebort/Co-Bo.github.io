@@ -1,16 +1,5 @@
 ---
-layout: page
+layout: first
 title: Anagrafe
 permalink: /anagrafe/
 ---
-
-<ul>
-
-{% for argomento in site.anagrafe %}
-
-  <li>
-    <a href="{{argomento.url}}">{{argomento.title}}</a>
-    </li>
-{%endfor%}
-
-</ul>

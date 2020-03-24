@@ -1,0 +1,13 @@
+---
+layout: page
+---
+<ul>
+  {% assign perma = page.permalink | remove: "/" %}
+
+  {% for argomento in site[perma] %}
+  <li>
+    <a href="{{argomento.url}}">{{argomento.title}}</a>
+  </li>
+  {%endfor%}
+
+</ul>
