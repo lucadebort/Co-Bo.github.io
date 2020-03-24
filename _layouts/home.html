@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+
+
+
+  <ul class="main-menu">
+    <a href="/">🏠Home</a>
+    {% for p in site.pages %}
+
+      <a href="{{p.url}}">  <li>{{p.title}}  </li></a>
+
+    {% endfor %}
+  </ul>
+</div>

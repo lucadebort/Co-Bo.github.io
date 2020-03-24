@@ -1,0 +1,4 @@
+---
+title: Amianto
+layout: post
+---
