@@ -10,14 +10,12 @@ layout: default
   {{ content }}
 
 
-
-
   <ul class="main-menu">
     <a href="/">🏠Home</a>
-    {% for p in site.pages %}
-
-      <a href="{{p.url}}">  <li>{{p.title}}  </li></a>
-
+    {% for p in site.html_pages %}
+      {% if p.title %}
+    <a href="{{p.url}}"><li>{{p.title}}</li></a>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
