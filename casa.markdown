@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Anagrafe
-permalink: /anagrafe/
+title: Casa
+permalink: /casa/
 ---
 
 <ul>
 
-{% for argomento in site.anagrafe %}
+{% for argomento in site.casa %}
 
   <li>
     <a href="{{argomento.url}}">{{argomento.title}}</a>

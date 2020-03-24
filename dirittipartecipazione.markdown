@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Anagrafe
-permalink: /anagrafe/
+title: Diritti e Partecipazione
+permalink: /dirittipartecipazione/
 ---
 
 <ul>
 
-{% for argomento in site.anagrafe %}
+{% for argomento in site.dirittipartecipazione %}
 
   <li>
     <a href="{{argomento.url}}">{{argomento.title}}</a>
