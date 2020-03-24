@@ -54,6 +54,18 @@ collections:
       output: true
   mobilità:
       output: true
+  salute:
+      output: true
+  scuola:
+      output: true
+  sicurezza:
+      output: true
+  sociale:
+      output: true
+  sport:
+      output: true
+  tasse:
+      output: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
