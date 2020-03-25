@@ -282,10 +282,20 @@ table td { border: 1px solid #e8e8e8; }
 
 .highlight .il { color: #099; }
 
+a:visited { color: #2a7ae2; }
+
 header .wrapper { display: flex; align-items: flex-end; }
+
+form { padding-top: 40px; width: 800px; margin: 0 auto; }
+
+form legend { font-weight: 700; font-size: 1.2rem; }
+
+form fieldset { background-color: lightyellow; }
+
+#display { font-style: italic; border-left: 3px solid orange; padding-left: 12px; margin-left: 20px; margin-top: 10px; margin-bottom: 10px; color: #6d350d; font-weight: 500; }
 
 ul { list-style: none; width: 240px; }
 
-ul li { width: 100%; text-align: center; border: 1px solid #aaa; padding: 5px; margin: 2px 0; }
+ul li { width: 100%; text-align: left; border: 1px solid #aaa; padding: 5px; margin: 2px 0; }
 
 /*# sourceMappingURL=main.css.map */

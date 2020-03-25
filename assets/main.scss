@@ -4,20 +4,54 @@
 
 @import "minima";
 
+
+a:visited {
+  color: $brand-color;
+}
+
 header .wrapper {
   display: flex;
   align-items: flex-end;
 }
 
 
+//Task form
 
+form {
+  padding-top:40px;
+  width: 800px;
+  margin: 0 auto;
+
+legend {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+  fieldset {
+    background-color: lightyellow;
+  }
+}
+
+#display {
+  font-style: italic;
+    border-left: 3px solid orange;
+    padding-left: 12px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #6d350d;
+    font-weight: 500;
+}
+
+
+
+//Navigation
 ul {
   list-style: none;
   width: 240px;
 
   li {
     width: 100%;
-    text-align: center;
+    text-align: left;
     border: 1px solid #aaa;
     padding: 5px;
     margin: 2px 0;

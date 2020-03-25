@@ -17,14 +17,47 @@
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="shortcut icon" type="image/png" href="/favicon.png"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Nuova Rete Civica" /></head>
-<body><header class="site-header" role="banner">
+<body data-barba="wrapper"><header class="site-header" role="banner">
 
   <div class="wrapper">
     <div><a href="/"><img src="/assets/img/logo.png" alt="Comune di Bologna" style="width: 72px"></a>
     </div><a class="site-title" rel="author" href="/">Nuova Rete Civica</a>
   </div>
 </header>
-<main class="page-content" aria-label="Content">
+<form action="#" method="post" id="demoForm" class="demoForm">
+
+  <fieldset>
+    <legend>Test 25.03.2020</legend>
+
+    <div>
+      <small>Seleziona il task:</small>
+      <select id="scripts" name="scripts" onchange="myFunction()">
+        <option value="Seleziona un task dall'elenco" selected></option>
+        <option value="Mi sono appena trasferit* in un nuovo quartiere di Bologna. Ci sono molti parchi e giardini pubblici ma nessuno con aree di sgambamento per cani. Io ne ho 7.
+Un amico mi dice che lui ha fatto richiesta di un'area apposita al Comune e decido di provarci anche io. Dove cerco?
+">Task 1</option>
+        <option
+          value="La mia vicina è stata sfrattata per non aver pagato l'affitto. <br> Potrebbe richiedere un aiuto dal Comune perché è in difficoltà economica ma non sa come fare. Decido di trovare per lei tutte le informazioni necessarie. Dove cerco?">
+          Task 2</option>
+        <option
+          value="Finalmente ho aperto il mio bar! Un posto delizioso, pulito, alla moda e...piccolo. Vista l'affluenza e considerato che ormai ad aprile è primavera inoltrata, decido di chiedere al comune il permesso di mettere dei tavolini all'esterno (piazzetta). Dove trovo informazioni, moduli, insomma quello che mi serve?">
+          Task 3</option>
+        <option
+          value="Mia suocera, residente a Rovigo, si è rotta una caviglia. Per le visite e la terapia viene al Rizzoli, accompagnata in macchina dal marito. Devo procurarle il pass per accedere alla ztl, riservato ai non residenti. Dove trovo i moduli e i contatti per inoltrare la richiesta?">
+          Task 4</option>
+        <option value="Bologna ha pochissimi parcheggi e questo lo sanno tutti. In più, nella via dove abito, c'è una macchina parcheggiata da 10 anni.
+Ora basta, noi abitanti della via vogliamo che venga rimossa! Come facciamo a rendere noto il problema?
+">Task 5</option>
+        <option
+          value="Ho appena cambiato città per lavoro e mi sono trasferit* qui con tutta la famiglia. Una dei miei nuovi colleghi mi ha parlato di una serie di aiuti che il comune dà a famiglie numerose come la mia. Penso che sul sito troverò le informazioni di cui ho bisogno. Ma dove, precisamente?">
+          Task 6</option>
+      </select>
+      <br>
+      <div id="display"></div>
+    </div>
+  </fieldset>
+</form>
+<main class="page-content" aria-label="Content" data-barba="container" data-barba-namespace="/casa/">
       <div class="wrapper">
         <article class="post">
 
@@ -80,6 +113,29 @@
   </div>
 
 </footer>
-</body>
+<script src="https://unpkg.com/@barba/core"></script>
+<script>
+barba.init({
+  debug: true,
+transitions: [{
+  leave({ current, next, trigger }) {
+    // do something with `current.container` for your leave transition
+    // then return a promise or use `this.async()`
+  },
+  enter({ current, next, trigger }) {
+    // do something with `next.container` for your enter transition
+    // then return a promise or use `this.async()`
+  }
+}]
+});
+
+
+function myFunction() {
+  var x = document.getElementById("scripts").value;
+  document.getElementById("display").innerHTML = "" + x;
+}
+
+</script>
+  </body>
 
 </html>
